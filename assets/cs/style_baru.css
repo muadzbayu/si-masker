@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5; 
+    justify-content: space-between;
+}
+.header .logo {
+      font-weight: bold;
+      text-decoration: none;
+      position: absolute;
+      top: 0;
+      left: 10%;
+      color: #dadada;
+      font-size: 1.5em;
+      margin: 20px 0px;
+}
+.header .logo:hover {
+      color: white; }
+    .header ul {
+      position: absolute;
+      top: 0;
+      right: 10%;
+      margin: 30px 40px 30px 0px; }
+      .header ul li {
+        list-style: none;
+        display: inline;
+        margin: 10px 5px;
+        padding: 30px 10px; }
+        .header ul li a {
+          padding: 20px 0;
+          color: #dadada;
+          text-decoration: none;
+          font-weight: bold; }
+        .header ul li a:hover {
+          color: white; }
+    .header i {
+      display: none; }
+  
+  #header .navbar-shrink {
+    box-shadow: 20px 0 15px gray;
+    background-color: white; }
+  
+  @media (max-width: 992px) {
+    .header {
+      width: 100%;
+      box-shadow: 1px 0 15px gray;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 0; 
+      height: 3em;}
+      .header .logo:hover {
+        color: black; }
+      .header .menu {
+        display: none;
+        }
+      .header .menu ul {
+        display: block;
+        width:100vh;
+        margin-left:0;
+        position: fixed;
+        top: 6%;
+        left:0;
+        right:0;
+        padding:0 10%;
+        z-index: -5;
+        background-color: white;
+        border-bottom: 5px solid rgba(128, 128, 128, 0.397);
+    }
+      .header .menu li {
+        display: block;
+        padding: 10px 0;
+        width:100%;
+        margin: 0;
+     }
+      .header .menu li:nth-child(1) {
+        padding-top: 15px; }
+      .header .menu li:last-child {
+        padding-bottom: zz5px; }
+      .header .menu a {
+        color: gray; }
+      .header .menu a:hover {
+        color: orange; }
+      .header .logo {
+        display: block;
+        color: black; }
+      .header i {
+        display: block;
+        width: 15px;
+        height: 15px;
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid #525252;
+        position: absolute;
+        margin:10px 0; 
+        top: 0;
+        right: 10%; 
+    }
+        
+      .header i:hover {
+        margin:9px 0; 
+        border: 3px solid #525252; } 
+    }

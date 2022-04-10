@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top,#d4d4d4, #5a4242);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container{
+    display:grid;
+    place-items: center;
+    min-height: 100vh;
+} 
+.login{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2,auto);
+    background-color: rgba(39, 15, 15, 0.37);
+    padding: 20px;
+    width: 400px;
+    box-shadow: 5px 5px 30px #adabab;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.fform{
+    display:grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6,auto);
+    grid-gap: 10px;
+}
+.fform label{
+    color:white;
+}
+.fform input[type="text"], .fform input[type="password"]{
+    padding: 10px 0;
+    color: #919191;
+}
+.fform button{
+    padding: 12px 0;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    color: white;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.fform button:hover{
+    cursor:pointer;
+    background-color: #0000a0;
+}
+
+.fform a{
+    display: block;
+    text-align: center;
+    background-color: #ff6c09;
+    color:white;
+    font-weight: bold;
+    padding:10px 0;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.fform a:hover{
+    background-color: rgb(255, 166, 0);
+}
